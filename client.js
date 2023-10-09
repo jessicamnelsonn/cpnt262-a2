@@ -1,33 +1,49 @@
-let myNumber = 5467; // MyNumber variable set to 5467
-console.log(typeof myNumber); // Checking data type of variable
+// Initial Number (Before)
+let myNumber = 5467; 
+// Number output
+document.getElementById("number").innerHTML = myNumber;
 
-console.log(myNumber); // Expected output 5467
+// Number rendered (After)
 
-console.log(myNumber.toExponential()); // Expected output, exponential of "a"
+// Expected output, exponential of "myNumber"
+console.log(myNumber.toExponential()); 
+document.getElementById("exponential").innerHTML = myNumber.toExponential();
 
-console.log(Number.isInteger(myNumber)); //Expected output, is "a" an integer? (true or false)
+//Expected output, is "myNumber" an integer? (true or false)
+console.log(Number.isInteger(myNumber)); 
+document.getElementById("integer").innerHTML = Number.isInteger(myNumber);
 
-console.log(Number.isNaN(myNumber)); // Expected output, is "a" a NaN? (true or false)
+// Expected output, is "myNumber" a NaN? (true or false)
+console.log(Number.isNaN(myNumber)); 
+document.getElementById("nan").innerHTML = Number.isNaN(myNumber);
 
-console.log(Number.isFinite(myNumber)); // Expected output, is "a" finite? (true or false)
+// Expected output, is "myNumber" finite? (true or false)
+console.log(Number.isFinite(myNumber)); 
+document.getElementById("finite").innerHTML = Number.isFinite(myNumber);
 
 
-const myName = ("Jessica" + " " + "Michelle"); // myName variable set to Jessica Michelle
-console.log(typeof myName); // Checking data type of variable
 
-const firstCharacter = myName[0]; // Get the first character of "myName"
+// Initial String (Before)
+const myName = ("Jessica Michelle"); 
+// String output
+document.getElementById("string").innerHTML = myName;
 
-console.log(myName); // Expected output, Jessica Michelle
+// String rendered (After)
 
-console.log(myName.length); // Expected output, length of string
+// Expected output, Jessica Nelson
+console.log(myName.replace("Michelle", "Nelson"));
+document.getElementById("replace").innerHTML = myName.replace("Michelle", "Nelson");
 
-console.log(firstCharacter); // Expected output, first character of string
+// Expected output, does string start with "Jess"? (true of false) 
+console.log(myName.startsWith("Jess"));
+document.getElementById("starts-with").innerHTML = myName.startsWith("Jess");
 
-console.log(myName.replace("Michelle", "Nelson")); // Expected output, Jessica Nelson
+// Expected output, does string end with "cool"? (true or false) 
+console.log(myName.endsWith("cool")); 
+document.getElementById("ends-with").innerHTML = myName.endsWith("cool");
 
-console.log(myName.startsWith("Jess")); // Expected output, does string start with "Jess"? (true of false) 
-
-console.log(myName.endsWith("cool")); // Expected output, does string end with "cool"? (true or false)
-
+//Expected output, length of string
+console.log(myName.length)
+document.getElementById("length").innerHTML = myName.length;
 
 
