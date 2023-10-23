@@ -1,4 +1,4 @@
-# CPNT 262 Assignment 2: String and Numbers | Before and After
+# CPNT 262 Achievement 2: String and Numbers | Before and After
 Author: Jessica Nelson
 
 
